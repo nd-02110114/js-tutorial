@@ -12,7 +12,7 @@
   簡単に、タスクを Git にフックできるようにするツール
 * Nodemon  
   ファイルを変更した時に、自動的に server をリスタートさせるツール
-* PM2
+* PM2  
   Node.js のデーモン化ツール、Production でよく使われる
 * Webpack 設定について
 
