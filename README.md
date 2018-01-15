@@ -29,3 +29,8 @@
   * resolve
     * extensions : 読み込む際に拡張子を省略できるようにする設定
     * alias : ファイル単位で alias をはることができる
+
+* React Helmet  
+  ページの Header を記述するのを助けるライブラリ
+* React SSR
+  SVC みたいな感じ実装させると良い。Store の扱い方にいは注意！
