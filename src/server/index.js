@@ -13,7 +13,7 @@ import setUpSocket from './socket'
 const app = express()
 // flow-disable-next-line
 const http = Server(app)
-const io = socketIO(http)
+const io = socketIO.listen(http)
 setUpSocket(io)
 
 app.use(compression())
@@ -22,7 +22,7 @@ app.use(STATIC_PATH, express.static('public'))
 
 routing(app)
 
-app.listen(WEB_PORT, () => {
+http.listen(WEB_PORT, () => {
   // eslint-disable-next-line no-console
   console.log(
     `Server running on port ${WEB_PORT} ${
